@@ -16,6 +16,10 @@
 		1C31C36A17E584B7007FD329 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C31C36917E584B7007FD329 /* Default.png */; };
 		1C31C36C17E584B7007FD329 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C31C36B17E584B7007FD329 /* Default@2x.png */; };
 		1C31C36E17E584B7007FD329 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C31C36D17E584B7007FD329 /* Default-568h@2x.png */; };
+		1C31C37717E584CD007FD329 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C31C37517E584CD007FD329 /* ViewController.m */; };
+		1C31C37817E584CD007FD329 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C31C37617E584CD007FD329 /* ViewController.xib */; };
+		1C31C37B17E58B95007FD329 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C31C37A17E58B95007FD329 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1C31C37D17E58C70007FD329 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C31C37C17E58C70007FD329 /* libxml2.2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,12 @@
 		1C31C36917E584B7007FD329 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		1C31C36B17E584B7007FD329 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		1C31C36D17E584B7007FD329 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1C31C37417E584CD007FD329 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1C31C37517E584CD007FD329 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1C31C37617E584CD007FD329 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		1C31C37917E58B95007FD329 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		1C31C37A17E58B95007FD329 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		1C31C37C17E58C70007FD329 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C31C37D17E58C70007FD329 /* libxml2.2.dylib in Frameworks */,
 				1C31C35817E584B7007FD329 /* UIKit.framework in Frameworks */,
 				1C31C35A17E584B7007FD329 /* Foundation.framework in Frameworks */,
 				1C31C35C17E584B7007FD329 /* CoreGraphics.framework in Frameworks */,
@@ -51,6 +62,7 @@
 		1C31C34B17E584B7007FD329 = {
 			isa = PBXGroup;
 			children = (
+				1C31C37C17E58C70007FD329 /* libxml2.2.dylib */,
 				1C31C35D17E584B7007FD329 /* NetAndParse */,
 				1C31C35617E584B7007FD329 /* Frameworks */,
 				1C31C35517E584B7007FD329 /* Products */,
@@ -78,9 +90,14 @@
 		1C31C35D17E584B7007FD329 /* NetAndParse */ = {
 			isa = PBXGroup;
 			children = (
+				1C31C37917E58B95007FD329 /* GDataXMLNode.h */,
+				1C31C37A17E58B95007FD329 /* GDataXMLNode.m */,
 				1C31C36617E584B7007FD329 /* AppDelegate.h */,
 				1C31C36717E584B7007FD329 /* AppDelegate.m */,
 				1C31C35E17E584B7007FD329 /* Supporting Files */,
+				1C31C37417E584CD007FD329 /* ViewController.h */,
+				1C31C37517E584CD007FD329 /* ViewController.m */,
+				1C31C37617E584CD007FD329 /* ViewController.xib */,
 			);
 			path = NetAndParse;
 			sourceTree = "<group>";
@@ -154,6 +171,7 @@
 				1C31C36A17E584B7007FD329 /* Default.png in Resources */,
 				1C31C36C17E584B7007FD329 /* Default@2x.png in Resources */,
 				1C31C36E17E584B7007FD329 /* Default-568h@2x.png in Resources */,
+				1C31C37817E584CD007FD329 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +184,8 @@
 			files = (
 				1C31C36417E584B7007FD329 /* main.m in Sources */,
 				1C31C36817E584B7007FD329 /* AppDelegate.m in Sources */,
+				1C31C37717E584CD007FD329 /* ViewController.m in Sources */,
+				1C31C37B17E58B95007FD329 /* GDataXMLNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +266,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NetAndParse/NetAndParse-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "NetAndParse/NetAndParse-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -257,6 +278,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NetAndParse/NetAndParse-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "NetAndParse/NetAndParse-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
